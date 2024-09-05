@@ -11,14 +11,11 @@ export default defineNuxtConfig({
     viewer: true,
   },
   devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    ['pinia/nuxt', 
-      { 
-        autoImports: ['defineStore', 'acceptHMRUpdate'] 
-      }
-    ],
-  ],
+  modules: ["@nuxtjs/tailwindcss", ['@pinia/nuxt', 
+    { 
+      autoImports: ['defineStore', 'acceptHMRUpdate'] 
+    }
+  ], "@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
   imports: {
     dirs: ['stores'],
   },

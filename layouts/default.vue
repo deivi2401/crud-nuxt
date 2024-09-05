@@ -1,4 +1,4 @@
-<template>
+<template class="bg-gray-900">
   <Disclosure as="nav" class="bg-blue-800" >
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
@@ -18,7 +18,8 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
                 <NuxtLink to="/" class="text-gray-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</NuxtLink>
-                <NuxtLink to="/about" class="text-gray-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</NuxtLink>
+                <NuxtLink to="/about" class="text-gray-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Presupuesto</NuxtLink>
+                <NuxtLink to="/formulario" class="text-gray-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Formulario</NuxtLink>
                 <NuxtLink to="/products" class=" text-gray-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Products</NuxtLink>
             </div>
           </div>
@@ -31,7 +32,7 @@
       </div>
     </div>
   </Disclosure>
-  <div>
+  <div >
     <slot/>
   </div>
 </template>
