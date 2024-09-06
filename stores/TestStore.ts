@@ -8,18 +8,26 @@ interface FormData{
   itemWeight: number | null;
 }
 
-export const useMyTestStoreStore = defineStore({
-  id: 'myTestStoreStore',
+
+
+export const useFormStore  = defineStore('formStore',{
   state: (): FormData => ({ 
     productName: '',
     brand: '',
     price: null,
     category: '',
-    itemWeight: null,
+    itemWeight: null
   }),
   actions: {
-    setMessage(newMessage:string){
-      this.mensaje = newMessage
+    updateFormData(field: keyof FormData, value: string){
+      this.[field] = value
+    },
+    resetFormData(){
+      this.productName = ''
+      this.brand = ''
+      this.price = null
+      this.category = ''
+      this.itemWeight = null
     }
   },
   getters: {},
