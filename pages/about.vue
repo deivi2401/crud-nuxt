@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import { useMyTestStoreStore } from '#imports'
+import { useFormStore } from "#imports";
 
-const StorePrueba = useMyTestStoreStore()
-
-
-
+const StorePrueba = useFormStore();
 </script>
 <template>
   <div>
@@ -14,19 +11,20 @@ const StorePrueba = useMyTestStoreStore()
       exercitationem fuga mollitia sit! Excepturi nisi illum asperiores. Cumque.
     </p>
     <p>
-{{ StorePrueba.mensaje }}
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+      architecto sequi neque impedit, consectetur, atque eaque vel facere
+      quaerat ratione facilis quis obcaecati magnam enim cum odit, dicta
+      expedita consequatur.
     </p>
   </div>
 </template>
-
-
 
 <style scoped>
 h2 {
   margin-bottom: 20p;
   font-size: 36px;
 }
-p{
-    margin: 20px 0;
+p {
+  margin: 20px 0;
 }
 </style>
