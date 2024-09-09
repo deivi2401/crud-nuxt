@@ -26,7 +26,8 @@ let popperInstance: ReturnType<typeof createPopper> | null = null;
 onMounted(() => {
   if (typeof window !== 'undefined' && popperRef.value && props.referenceElement instanceof HTMLElement) {
     popperInstance = createPopper(props.referenceElement, popperRef.value, {
-      placement: 'bottom',
+      placement: 'top',
+      
     });
   }
 });

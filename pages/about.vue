@@ -1,7 +1,9 @@
-<script setup lang="ts">
-import { useFormStore } from "#imports";
+<script>
+import {AtomSpinner} from 'epic-spinners'
 
-const StorePrueba = useFormStore();
+export default {
+  components: {AtomSpinner},
+}
 </script>
 <template>
   <div>
@@ -17,6 +19,10 @@ const StorePrueba = useFormStore();
       expedita consequatur.
     </p>
   </div>
+  <div id="app">
+    <AtomSpinner :animation-duration="1000" :size="60" color="#ff1d5e"/>
+  </div>
+  
 </template>
 
 <style scoped>

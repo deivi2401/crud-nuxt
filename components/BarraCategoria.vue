@@ -9,14 +9,14 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { useProductStore } from '@/stores/productStore';
+import { useFormStore } from '@/stores/TestStore';
 import ApexCharts from 'vue3-apexcharts';
 import {AtomSpinner} from 'epic-spinners'
 
-const productStore = useProductStore();
+const formStore = useFormStore();
 
-const categories = computed(() => Object.keys(productStore.productCategories));
-const seriesData = computed(() => Object.values(productStore.productCategories));
+const categories = computed(() => Object.keys(formStore.productCategories));
+const seriesData = computed(() => Object.values(formStore.productCategories));
 const isLoading = ref(true)
 
 const onChartLoad = () => {

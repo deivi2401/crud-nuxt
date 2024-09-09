@@ -15,6 +15,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia/nuxt": "^0.5.4",
     "@vueuse/core": "^11.0.3",
+    "apexcharts": "^3.53.0",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
     "vue": "latest"
@@ -42,7 +43,7 @@
     "pinia": "^2.1.7",
     "placeholder-loading": "^0.6.0",
     "vue-chartjs": "^5.2.0",
-    "vue3-apexcharts": "^1.4.4",
+    "vue3-apexcharts": "^1.6.0",
     "vue3-tour": "^0.3.4",
     "xlsx": "^0.18.5"
   }

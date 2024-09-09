@@ -24,6 +24,20 @@ export const useFormStore = defineStore("formStore", {
       this.productos.push(task);
     }
   },
-  getters: {},
-  persist: true,
+  getters: {
+    productCategories: (state) => {
+      const categories = {};
+      state.productos.forEach((product) => {
+        if (categories[product.category]) {
+          categories[product.category]++;
+        } else {
+          categories[product.category] = 1;
+        }
+      });
+      return categories;
+    }
+  },
+  persist: {
+    storage: persistedState.localStorage,
+  },
 });
