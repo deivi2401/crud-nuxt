@@ -29,6 +29,7 @@ const series = ref([
   {
     name: 'Cantidad de Productos',
     data: seriesData.value,
+    
   },
 ]);
 </script>
