@@ -1,10 +1,12 @@
 <template>
-  <div class="flex-auto">
+  <div>
     <div v-if="isLoading">
       <AtomSpinner :animation-duration="1500" :size="60" color="#ff1d5e" class="mx-40"/>
     </div>
-    <ApexCharts v-if="!isLoading" class="mx-4 max-w-sm rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" type="bar" :options="chartOptions" :series="series" />
-  </div>
+    <ClientOnly >
+      <ApexCharts v-if="!isLoading" class="max-w-sm rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" type="bar" :options="chartOptions" :series="series" />
+    </ClientOnly>
+     </div>
 </template>
 
 <script setup>

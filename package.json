@@ -42,6 +42,7 @@
     "papaparse": "^5.4.1",
     "pinia": "^2.1.7",
     "placeholder-loading": "^0.6.0",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "vue-chartjs": "^5.2.0",
     "vue3-apexcharts": "^1.6.0",
     "vue3-tour": "^0.3.4",

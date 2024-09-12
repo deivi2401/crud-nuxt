@@ -1,12 +1,8 @@
 <template>
   <h1 class="text-center my-4 font-bold text-xl antialiased">Productos por Categoria</h1>
-  <div class="flex gap-20">
-    <ClientOnly >
-      <GraficasProd/>
-    </ClientOnly>
-    <ClientOnly>
-      <BarraCategoria/>
-    </ClientOnly>
+  <div class="grid sm:grid-cols-12 gap-2 my-4">
+      <GraficasProd class="mx-4 justify-items-center col-span-4"/>
+      <BarraCategoria class=" mx-4 col-span-4"/>
   </div>
 </template>
 
