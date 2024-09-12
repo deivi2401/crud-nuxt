@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-auto">
+  <div class="flex-grow-0">
     <div v-if="isLoading">
       <AtomSpinner :animation-duration="1500" :size="60" color="#ff1d5e" class="mx-40"/>
     </div>

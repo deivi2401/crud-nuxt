@@ -1,15 +1,12 @@
 <template>
   <h1 class="text-center my-4 font-bold text-xl antialiased">Productos por Categoria</h1>
-  <div class="gap-4">
-
+  <div class="flex gap-20">
     <ClientOnly >
       <GraficasProd/>
     </ClientOnly>
-
     <ClientOnly>
       <BarraCategoria/>
     </ClientOnly>
-
   </div>
 </template>
 
@@ -18,7 +15,6 @@ import { useProductStore } from '@/stores/productStore';
 import BarraCategoria from '~/components/BarraCategoria.vue';
 
 const productStore = useProductStore();
-const FormStore = useFormStore()
 
 // Simula agregar productos al store
 productStore.setProducts([
