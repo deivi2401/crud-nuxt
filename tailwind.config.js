@@ -1,18 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+import fluid, {extract} from 'fluid-tailwind'
 export default {
-  content: [
-    `/components/**/*.{vue,js,ts}`,
-    `/layouts/**/*.vue`,
-    `/pages/**/*.vue`,
-    `/composables/**/*.{js,ts}`,
-    `/plugins/**/*.{js,ts}`,
-    `/utils/**/*.{js,ts}`,
-    `/App.{js,ts,vue}`,
-    `/app.{js,ts,vue}`,
-    `/Error.{js,ts,vue}`,
-    `/error.{js,ts,vue}`,
-    `/app.config.{js,ts}`
-  ],
+  content: {
+    files: [    
+       `/components/**/*.{vue,js,ts}`,
+      `/layouts/**/*.vue`,
+      `/pages/**/*.vue`,
+      `/composables/**/*.{js,ts}`,
+      `/plugins/**/*.{js,ts}`,
+      `/utils/**/*.{js,ts}`,
+      `/App.{js,ts,vue}`,
+      `/app.{js,ts,vue}`,
+      `/Error.{js,ts,vue}`,
+      `/error.{js,ts,vue}`,
+      `/app.config.{js,ts}`],
+      extract
+  },
   darkMode: 'class',
   theme: {
     extend: {
@@ -57,6 +60,8 @@ export default {
   ]
     }
   },
-  plugins: [],
+  plugins: [
+    fluid
+  ],
 }
 

@@ -4,18 +4,18 @@ export const useFormStore = defineStore("formStore", {
   state: () => ({
     productos: [
       {
-        name: "ddd",
-        brand: "sdadasd",
-        price: 222,
-        category: "asdasda",
-        itemWeight: 222,
+        name: "Pulsefire haste",
+        brand: "HyperX",
+        price: 20,
+        category: "GA",
+        itemWeight: 1,
       },
       {
-        name: "sewasda",
-        brand: "sdadasd",
-        price: 222,
-        category: "asdasda",
-        itemWeight: 222,
+        name: "Msi Laptop",
+        brand: "MSI",
+        price: 1300,
+        category: "PC",
+        itemWeight: 10,
       },
     ],
   }),

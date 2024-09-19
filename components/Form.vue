@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-lg border-cyan-300 py-8 px-4 mx-auto max-w-lg lg:py-16">
+    <div class="rounded-lg  py-3 px-4 ml-64 max-w-lg lg:py-16">
       <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
         Add a new product
       </h2>

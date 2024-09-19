@@ -1,5 +1,6 @@
 <template>
-  <Form/>
+  <SidebarTest/>
+  <Form />
 </template>
 
 <script>

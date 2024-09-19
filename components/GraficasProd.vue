@@ -4,7 +4,7 @@
       <AtomSpinner :animation-duration="1500" :size="60" color="#ff1d5e" />
     </div>
     <ClientOnly >
-      <ApexCharts v-if="!isLoading" class="max-w-sm rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" type="bar" :options="chartOptions" :series="series" />
+      <ApexCharts v-if="!isLoading" class="ml-20 max-w-sm rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" type="bar" :options="chartOptions" :series="series" />
     </ClientOnly>
      </div>
 </template>

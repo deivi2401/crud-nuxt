@@ -1,5 +1,11 @@
 <template>
   <div>
+<SidebarTest/>
+<div class="grid grid-cols-12 gap-6">
+  <DashboardCard1/>
+  <DashboardCard1/>
+
+</div>
 
   </div>
 </template>

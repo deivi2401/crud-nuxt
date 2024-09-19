@@ -38,6 +38,7 @@
     "epic-spinners": "^2.0.0",
     "export-from-json": "^1.7.3",
     "floating-vue": "^2.0.0-beta.24",
+    "fluid-tailwind": "^1.0.3",
     "html2canvas": "^1.4.1",
     "papaparse": "^5.4.1",
     "pinia": "^2.1.7",
