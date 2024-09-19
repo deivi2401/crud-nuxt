@@ -22,6 +22,18 @@ export const useFormStore = defineStore("formStore", {
   actions: {
     addTask(task) {
       this.productos.push(task);
+    },
+    updateProductByName(productName,property, newValue){
+      const product = this.productos.find(p => p.name === productName)
+      if (product) {
+        if (product.hasOwnProperty(property)) {
+          property[property] = newValue
+        } else {
+          console.error(`La propiedad "${property}" no existe en el producto `)
+        }
+      } else {
+        console.error(`El producto con el nombre "${productName}" no fue encontrado`)
+      }
     }
   },
   getters: {

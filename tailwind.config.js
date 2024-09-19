@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-import fluid, {extract} from 'fluid-tailwind'
 export default {
-  content: {
-    files: [    
+  content: [    
        `/components/**/*.{vue,js,ts}`,
       `/layouts/**/*.vue`,
       `/pages/**/*.vue`,
@@ -13,9 +11,8 @@ export default {
       `/app.{js,ts,vue}`,
       `/Error.{js,ts,vue}`,
       `/error.{js,ts,vue}`,
-      `/app.config.{js,ts}`],
-      extract
-  },
+      `/app.config.{js,ts}`]
+  ,
   darkMode: 'class',
   theme: {
     extend: {
@@ -59,9 +56,6 @@ export default {
     'Noto Color Emoji'
   ]
     }
-  },
-  plugins: [
-    fluid
-  ],
+  }
 }
 

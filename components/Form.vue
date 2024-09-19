@@ -77,6 +77,7 @@
             <input
               type="number"
               name="item-weight"
+              v-model="newWeight"
               id="item-weight"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               placeholder="12"
@@ -126,6 +127,7 @@ export default {
     const newTask = ref('')
     const newBrand = ref('')
     const newPrice = ref('')
+    const newWeight = ref('')
     const newCategory = ref('')
     const buttonRef = ref<HTMLElement | null>(null);
     const isPopupVisible = ref(false);
@@ -140,18 +142,19 @@ export default {
           brand: newBrand.value,
           price: newPrice.value,
           category: newCategory.value,
-          itemWeight: 22
+          itemWeight: newWeight.value
         })
         newTask.value = ''
         newBrand.value = ''
         newPrice.value = ''
         newCategory.value = ''
+        newWeight.value = ''
       }
     }
     const onResetClick = () => {
       formStore.$reset()
     }
-    return { handleSubmit, newTask, formStore, togglePopup, onResetClick, newBrand, newPrice, newCategory, buttonRef, isPopupVisible }
+    return { handleSubmit, newTask, formStore, togglePopup, onResetClick, newBrand, newPrice, newCategory,newWeight, buttonRef, isPopupVisible }
   },
 }
 </script>
